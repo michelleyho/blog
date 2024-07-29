@@ -8,4 +8,6 @@ description:
   Personal blog tracking adventure in software engineering
 
 theme: minima
+minima:
+  skin: solarized-dark
 
