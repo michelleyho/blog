@@ -5,8 +5,6 @@ author: "Michelle Ho"
 meta: "TIL"
 date: 2024-07-30
 ---
-
-## System Design: Quora
 ### What is it?
 - Social Platform
 - Question and Answer Forum
@@ -73,9 +71,9 @@ date: 2024-07-30
 2. Memcache - Store frequencly accessed data for lower latency
 3. Redis - store counter info because allows in - store increment updates.
 
-### Computer Servers
+### Compute Servers
 - computations needed for recommendation/ranking services.
-- 
+
 ### APIs
 
 
