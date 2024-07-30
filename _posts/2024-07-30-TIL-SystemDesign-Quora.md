@@ -71,6 +71,12 @@ date: 2024-07-30
 2. Memcache - Store frequencly accessed data for lower latency
 3. Redis - store counter info because allows in - store increment updates.
 
+### Long Polling Feature
+- to give clients updates on comments, upvotes/downvotes, that require frequent page updates, use long polling instead of polling.
+- Regular polling - client frequently requests server for updates, server responds to client even if have/don't have updates. Server is overburdened.
+- Long Polling - Client requests server for update. Server may not resopond for up to 60 seconds, if no updates. But if updates, will reply client immediately.
+- 
+
 ### Compute Servers
 - computations needed for recommendation/ranking services.
 
