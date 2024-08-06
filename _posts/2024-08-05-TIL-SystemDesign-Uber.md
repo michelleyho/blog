@@ -45,3 +45,8 @@
 - mysql - for individual trip data - highly relational data to be kept across multiple tables.
 
 #### Tables needed
+- Riders - Id, name, email, photo, phone
+- Driver - id, name, email, photo, phone, vehicle, license, etc
+- Trips - trip id, driver, rider, src, dst, status (in progress, done)
+- driver locaiton - driver id, prev location (lat, long), current location
+-  
