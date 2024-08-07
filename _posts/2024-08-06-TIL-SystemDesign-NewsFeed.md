@@ -52,7 +52,17 @@ date: 2024-08-06
 - post cache
 - post database
 #### Services
-- notification service
-- newsfeed generation service
-- newsfeed publishing service
-- post service
+- notification service - notfies newsfeed generation service that new post from users follow circle.
+- newsfeed generation service - generates newsfeed from users follow circle's posts. Update newsfeed cache.
+- newsfeed publishing service - publish newsfeed from users cache to user timeline.  Adds in corresponding media files from blob storage.
+- post service - when user wants to create post. Post created in user post cache and post database.
+
+#### Storage
+##### Database Tables
+- User : id, name, email, contact info
+- Entity : info for any entity (page, group, etc)
+- Feed_item: id, data about posts created (which user, date, like count, associated media, actual content)
+- Media: id, description, file path, creation date, view count, etc
+##### Graphs Databases 
+- sotre relationships between users, friends, followers, etc.
+- 
